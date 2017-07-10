@@ -13,11 +13,15 @@ $style="body{
         #ezlabelWell{
             background-color: green;
             color: yellow;
-            position: absolute;
-            right: 10px;
-            top: 85px;
-            transform: rotate(20deg);
             border: 3px solid blue;
+        }
+        @media (min-width: 992px){
+             #ezlabelWell{
+                position: absolute;
+                right: 10px;
+                top: 85px;
+                transform: rotate(20deg);
+            }
         }
         .jumbotron h2{
             z-index: 2;
@@ -38,14 +42,6 @@ include "top.php";
         </h2>
     </div>
     <div class="row">
-        <div id="ezlabelWell" class="well col-md-4 col-xs-4">
-            <h2><a id="hrefEzLabels" href="products.php">Introducing Brand New Product! EzLabels</a></h2>
-                <p>
-                    Self sticking labels for all your personal belongings. Adheres to most surfaces including clothing, electronics, books etc. Easy to write on with any pen or marker.
-                <p>
-        </div>
-    </div>
-    <div class="row">
         <div class="col-md-3">
             <img class="img-responsive center-block" src="images/beforeAfter.jpg" alt="Before &amp; After">
         </div>
@@ -55,6 +51,14 @@ include "top.php";
         <div id="rightDiv" class="col-md-3">
             <button id="buyButton"><a target="_blank" href="https://www.amazon.com/Necklastic-Neckline-Repair-Enough-T-Shirts/dp/B01A9GQMTW/ref=sr_1_19?m=A3EGQ1D5TCAPQW&s=merchant-items&ie=UTF8&qid=1498103156&sr=1-19">Buy Now!</a></button>
             <img class="img-responsive center-block" src="images/package&roll.jpg" alt="package &amp; roll of EZnecklastic">
+        </div>
+    </div>
+    <div class="row">
+        <div id="ezlabelWell" class="well col-md-4">
+            <h2><a id="hrefEzLabels" href="products.php">Introducing Brand New Product! EzLabels</a></h2>
+                <p>
+                    Self sticking labels for all your personal belongings. Adheres to most surfaces including clothing, electronics, books etc. Easy to write on with any pen or marker.
+                <p>
         </div>
     </div>
     <div class="row>

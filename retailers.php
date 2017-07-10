@@ -280,8 +280,16 @@ $retailers=[
 include "top.php";
 ?>
 
-    <h1>Retailers</h1>
-    <p>(list formation in progress)</p>
+<h1>Retailers</h1>
+<p>(list formation in progress)</p>
+<ul class="nav nav-pills">
+    <li class="active"><a data-toggle="pill" href="#home">All Retailers</a></li>
+    <li><a data-toggle="pill" href="#menu1">EZ Necklastic</a></li>
+    <li><a data-toggle="pill" href="#menu2">EZ Camp Labels</a></li>
+</ul>
+
+<div class="tab-content">
+  <div id="home" class="tab-pane fade in active">
     <div class="row">
         <?php foreach($retailers as $city=>$retailer):
             if($retailer==="div3") echo "<div class = \"col-md-3\">";
@@ -295,4 +303,42 @@ include "top.php";
            }
         endforeach ?>
     </div>
+</div>
+<div id="menu1" class="tab-pane fade">
+    <div class="row">
+        <?php foreach($retailers as $city=>$retailer):
+            if($retailer==="div3") echo "<div class = \"col-md-3\">";
+            elseif($retailer==="/div") echo "</div>";
+            else{
+        ?>
+
+                <h2><?= $city ?></h2>
+                    <?php foreach($retailer as $name=>$info): 
+                        if($info['Necklastic']){
+                    ?>
+                        <p><?= $name ?></p>
+                    <?php 
+                        }
+                    endforeach;
+           }
+        endforeach ?>
+    </div>
+</div>
+<div id="menu2" class="tab-pane fade">
+    <div class="row">
+        <?php foreach($retailers as $city=>$retailer):
+            if($retailer==="div3") echo "<div class = \"col-md-3\">";
+            elseif($retailer==="/div") echo "</div>";
+            else{
+        ?>
+            <h2><?= $city ?></h2>
+                <?php foreach($retailer as $name=>$info): ?>
+                    <p><?= $name ?></p>
+                <?php endforeach;
+           };
+        endforeach ?>
+    </div>
+</div>
+</div>
+
     <?php include "bottom.php"; ?>
