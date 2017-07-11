@@ -292,7 +292,7 @@ include "top.php";
   <div id="home" class="tab-pane fade in active">
     <div class="row">
         <?php foreach($retailers as $city=>$retailer):
-            if($retailer==="div3") echo "<div class = \"col-md-3\">";
+            if($retailer==="div3") echo "<div class = \"col-md-3 col-sm-4 col-xs-6\">";
             elseif($retailer==="/div") echo "</div>";
             else{
         ?>
@@ -307,7 +307,7 @@ include "top.php";
 <div id="menu1" class="tab-pane fade">
     <div class="row">
         <?php foreach($retailers as $city=>$retailer):
-            if($retailer==="div3") echo "<div class = \"col-md-3\">";
+            if($retailer==="div3") echo "<div class = \"col-md-3 col-sm-4 col-xs-6\">";
             elseif($retailer==="/div") echo "</div>";
             else{
         ?>
@@ -327,7 +327,7 @@ include "top.php";
 <div id="menu2" class="tab-pane fade">
     <div class="row">
         <?php foreach($retailers as $city=>$retailer):
-            if($retailer==="div3") echo "<div class = \"col-md-3\">";
+            if($retailer==="div3") echo "<div class = \"col-md-3 col-sm-4 col-xs-6\">";
             elseif($retailer==="/div") echo "</div>";
             else{
         ?>
