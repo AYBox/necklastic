@@ -49,7 +49,7 @@ include "top.php";
             <img class="img-responsive center-block" src="images/packageFront.jpg" alt="EZnecklastic">
         </div>
         <div id="rightDiv" class="col-md-3">
-            <button id="buyButton"><a target="_blank" href="https://www.amazon.com/Necklastic-Neckline-Repair-Enough-T-Shirts/dp/B01A9GQMTW/ref=sr_1_19?m=A3EGQ1D5TCAPQW&s=merchant-items&ie=UTF8&qid=1498103156&sr=1-19">Buy Now!</a></button>
+            <a class="btn btn-primary" id="buyButton" target="_blank" href="https://www.amazon.com/Necklastic-Neckline-Repair-Enough-T-Shirts/dp/B01A9GQMTW/ref=sr_1_19?m=A3EGQ1D5TCAPQW&s=merchant-items&ie=UTF8&qid=1498103156&sr=1-19">Buy Now!</a>
             <img class="img-responsive center-block" src="images/package&roll.jpg" alt="package &amp; roll of EZnecklastic">
         </div>
     </div>
