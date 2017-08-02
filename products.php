@@ -20,13 +20,14 @@ include "top.php";
     <hr>
     <div>
         <p>EZnecklastic</p>
-        <button><a target="_blank" href="https://www.amazon.com/Necklastic-Neckline-Repair-Enough-T-Shirts/dp/B01A9GQMTW/ref=sr_1_19?m=A3EGQ1D5TCAPQW&s=merchant-items&ie=UTF8&qid=1498103156&sr=1-19">Buy Now on Amazon.com</a></button>
-        <button><a href="retailers.php">Find a Retailer</a></button>
+        <a class="btn btn-primary" target="_blank" href="https://www.amazon.com/Necklastic-Neckline-Repair-Enough-T-Shirts/dp/B01A9GQMTW/ref=sr_1_19?m=A3EGQ1D5TCAPQW&s=merchant-items&ie=UTF8&qid=1498103156&sr=1-19">Buy Now on Amazon.com</a>
+        <a class="btn btn-primary" href="retailers.php">Find a Retailer</a>
     </div>
     <hr>
     <div>
-        <p>EZlabels</p>
-        <button><a href="retailers.php">Find a Retailer</a></button>
+        <p>EZ Camp Labels</p>
+        <a class="btn btn-primary" href="https://www.amazon.com/dp/B073WN4P6M" target="_blank">Buy Now on Amazon.com</a>
+        <a class="btn btn-primary" href="retailers.php">Find a Retailer</a>
     </div>
     <hr>
     
